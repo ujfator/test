@@ -1,3 +1,33 @@
-<div>
-	<mat-card></mat-card>
+<div fxFill fxLayout="column">
+	<mat-toolbar color="primary" class="toolbar">
+		<button mat-icon-button (click)="sideNavigation.toggle()" label="Toggle Menu" class="header-menu-button">
+			<mat-icon>menu</mat-icon>
+		</button>
+		<span>{{ 'NOTES' | translate}}</span>
+		<span class="fill-remaining-space"></span>
+		<button mat-button (click)="add()" matTooltip="{{ 'ADDNOTE' | translate}}">
+			<mat-icon>note_add</mat-icon>
+		</button>
+		<button mat-button matTooltip="{{ 'PICKLANG' | translate}}" (click)=select.open()>
+			<mat-icon>language</mat-icon>
+		</button>
+		<mat-select #select class="langSelect">
+			<mat-option *ngFor="let language of languages" [value]="" (click)="changeLanguage(language.shortName)">
+			  {{ language.longName }}
+			</mat-option>
+		</mat-select>
+	</mat-toolbar>
+	<mat-divider></mat-divider>
+	<mat-sidenav-container class="side-navigation-container" fxFlex>
+		<mat-sidenav #sideNavigation mode="side" opened class="navigation-width">
+			<div fxLayout="column" fxLayoutAlign="start space-between" fxFlex>
+				<mat-nav-list fxLayout="column" fxLayoutAlign="start stretch">
+					<a mat-list-item *ngFor="let note of notes" [routerLink]="['/notes', note.id]" class="overflow-ellipsis">{{note.title}}</a>
+				</mat-nav-list>
+			</div>
+		</mat-sidenav>
+		<mat-sidenav-content class="content-width">
+			<router-outlet></router-outlet>
+		</mat-sidenav-content>
+	</mat-sidenav-container>
 </div>

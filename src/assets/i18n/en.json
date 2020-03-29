@@ -1,0 +1,15 @@
+{
+	"TITLE": "Test app",
+	"NOTES": "My notes",
+	"PICKLANG": "Select a language",
+	"ADDNOTE": "Add note",
+	"EDITNOTE": "Edit note",
+	"DELETENOTE": "Delete note",
+	"EDIT": "EDIT",
+	"SAVE": "SAVE",
+	"DELETE": "DELETE",
+	"DIALOGTITLE":"Title",
+	"ERRORMESSAGE": "Please add a note",
+	"CANCEl": "Cancel",
+	"SUBMIT": "Submit"
+}

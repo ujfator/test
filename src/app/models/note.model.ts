@@ -1,4 +1,5 @@
 export class Note {
-	id: number;
+	id?: number;
 	title: string;
+	editing?: boolean;
 }

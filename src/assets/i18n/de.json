@@ -1,0 +1,15 @@
+{
+	"TITLE": "Test Anwendung",
+	"NOTES": "Meine Anmerkungen",
+	"PICKLANG": "Sprachauswahl",
+	"ADDNOTE": "Anmerkung erstellen",
+	"EDITNOTE": "Anmerkung bearbeiten",
+	"DELETENOTE": "Anmerkung löschen",
+	"EDIT": "BEARBEITEN",
+	"SAVE": "SPEICHERN",
+	"DELETE": "LÖSCHEN",
+	"DIALOGTITLE":"Titel",
+	"ERRORMESSAGE": "Bitte fügen Sie eine Anmerkung hinzu",
+	"CANCEl": "Stornieren",
+	"SUBMIT": "Senden"
+}

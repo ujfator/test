@@ -1,0 +1,11 @@
+<form [formGroup]="form" fxLayout="column" fxLayoutAlign="start stretch" (ngSubmit)="onSubmit()">
+	<mat-form-field>
+		<mat-label>{{'DIALOGTITLE' | translate}}</mat-label>
+		<input name="title" type="text" formControlName="title" required matInput placeholder="title">
+		<mat-error>{{'ERRORMESSAGE' | translate}}</mat-error>
+	</mat-form-field>
+	<div mat-dialog-actions fxLayout="row" fxLayoutAlign="end center">
+		<button mat-stroked-button type="reset" color="warn" (click)="dialogRef.close()">{{'CANCEL' | translate}}</button>
+		<button mat-stroked-button color="primary" fxFlexOffset="15px" type="submit">{{'SUBMIT' | translate}}</button>
+	</div>
+</form>
