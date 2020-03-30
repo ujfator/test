@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Project set up
 
-If you have node installed, then run npm i @angular/cli, when that is done, run npm i to install other dependecies.
+If you have node installed, then run npm i -g @angular/cli, when that is done, run npm i to install other dependecies.
 
 ## Development server
 
@@ -20,7 +20,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `npm run test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ## Running end-to-end tests
 
