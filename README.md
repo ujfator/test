@@ -2,9 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.1.
 
+## Project set up
+
+If you have node installed, then run npm i @angular/cli, when that is done, run npm i to install other dependecies.
+
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:9000/`. The app will automatically reload if you change any of the source files.
+Run `ng serve --open` for a dev server. This will navigate you to `http://localhost:9000/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
