@@ -10,8 +10,14 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { A11yModule } from '@angular/cdk/a11y';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const materialModules = [
+	A11yModule,
 	MatCardModule,
 	MatIconModule,
 	MatToolbarModule,
@@ -26,8 +32,17 @@ const materialModules = [
 ]
 
 @NgModule({
+	exports: [
+		...materialModules,
+		FlexLayoutModule,
+	],
 	imports: [
-		...materialModules
+		CommonModule,
+		...materialModules,
+		BrowserAnimationsModule,
+		FlexLayoutModule,
+		FormsModule,
+		ReactiveFormsModule
 	],
 })
 export class MaterialModule { }
